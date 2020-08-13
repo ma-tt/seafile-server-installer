@@ -150,12 +150,12 @@ fi
 # Setup permissive selinux
 # -------------------------------------------
 # runtime
-enforce=`getenforce`
-if [[ "${enforce}" != "Disabled" ]]; then
-    setenforce 0
-fi
+#enforce=`getenforce`
+#if [[ "${enforce}" != "Disabled" ]]; then
+#    setenforce 0
+#fi
 # permanently
-sed -i 's/^SELINUX=.*/SELINUX=permissive/' /etc/selinux/config
+#sed -i 's/^SELINUX=.*/SELINUX=permissive/' /etc/selinux/config
 
 # -------------------------------------------
 # Setup firewall & fail2ban
